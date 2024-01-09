@@ -58,28 +58,6 @@ export default function Popup({ setShowPopup, notes, setNotes }: PopupProps) {
             onChange={(e) => setContent(e.target.value)}
             />
             <div className="flex flex-row justify-between">
-            <div className="flex flex-row gap-4">
-                <button
-                id="green"
-                onClick={handleColorChange}
-                className="color-btn bg-green-500"
-                ></button>
-                <button
-                id="red"
-                onClick={handleColorChange}
-                className="color-btn bg-red-500"
-                ></button>
-                <button
-                id="blue"
-                onClick={handleColorChange}
-                className="color-btn bg-blue-500"
-                ></button>
-                <button
-                id="yellow"
-                onClick={handleColorChange}
-                className="color-btn bg-yellow-500"
-                ></button>
-            </div>
             <div className="flex gap-3 w-full">
             <div className="rounded-full overflow-hidden w-[50px] h-[50px] mt-6">
             <input type="color" value={color} onChange={e => setColor(e.target.value)} className="border-none p-0 w-[200%] h-[200%] -translate-x-1/4 -translate-y-1/4 cursor-pointer"/>
