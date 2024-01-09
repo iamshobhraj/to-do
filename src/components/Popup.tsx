@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import { Note } from "../App";
 import { MdOutlineCancel } from "react-icons/md";
 
@@ -28,9 +28,6 @@ export default function Popup({ setShowPopup, notes, setNotes }: PopupProps) {
     setShowPopup(false);
   }
 
-  const handleColorChange = (e: { target: { id: SetStateAction<string> } }) => {
-    setColor(e.target.id);
-  };
 
   return (
     <div className="popup-container">
